@@ -5,7 +5,7 @@ public class RegExp {
 
    static Pattern p = Pattern.compile("^[A-Z a-z]{3,}$");
     public static void main(String[] args) {
-        String str = "Kirti";
+        String str = "Madan";
         Matcher m = p.matcher(str);
         if (m.matches()){
             System.out.println("valid");
