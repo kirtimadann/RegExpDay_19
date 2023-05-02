@@ -3,9 +3,9 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class RegExp {
 
-   static Pattern p = Pattern.compile("^(0|91)\s?[7-9][0-9]{9}$");
+   static Pattern p = Pattern.compile("^[a-zA-Z0-9][a-zA-Z0-9_.]*[a-zA-Z0-9]@[a-zA-Z]+[.][a-zA-Z]+[.][a-zA-Z]+$");
     public static void main(String[] args) {
-        String str = "91 9919819801";
+        String str = "abc.xyz@bl.co.in";
         Matcher m = p.matcher(str);
         if (m.matches()){
             System.out.println("valid");
