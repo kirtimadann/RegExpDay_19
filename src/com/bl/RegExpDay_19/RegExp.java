@@ -3,9 +3,9 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class RegExp {
 
-   static Pattern p = Pattern.compile("^[A-Z a-z]{3,}$");
+   static Pattern p = Pattern.compile("^(0|91)?[7-9][0-9]{9}$");
     public static void main(String[] args) {
-        String str = "Madan";
+        String str = "919919819801";
         Matcher m = p.matcher(str);
         if (m.matches()){
             System.out.println("valid");
