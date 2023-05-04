@@ -2,10 +2,10 @@ package com.bl.RegExpDay_19;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class RegExp {
-
-   static Pattern p = Pattern.compile("^[a-zA-Z][a-zA-Z]{8}$");
+//(?=.*[A-Z])
+   static Pattern p = Pattern.compile("^[a-zA-Z][a-zA-Z0-9]*(?=.*[A-Z]).*$");
     public static void main(String[] args) {
-        String password = "kirtiMada";
+        String password = "kirtI";
         Matcher m = p.matcher(password);
         if (m.matches()){
             System.out.println("valid");
