@@ -3,9 +3,9 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class RegExp {
 //(?=.*[A-Z])
-   static Pattern p = Pattern.compile("^[a-zA-Z][a-zA-Z0-9]*(?=.*[A-Z]).*$");
+   static Pattern p = Pattern.compile("^[a-zA-Z[0-9]][a-zA-Z0-9]*(?=.*[0-9]).*$");
     public static void main(String[] args) {
-        String password = "kirtI";
+        String password = "kirtI5";
         Matcher m = p.matcher(password);
         if (m.matches()){
             System.out.println("valid");
